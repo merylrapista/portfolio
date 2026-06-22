@@ -1,4 +1,4 @@
-# Basta_portfolio - Agent Instructions
+# winxport - Agent Instructions
 
 ## Project Overview
 Portfolio website for a Cross-Platform Mobile Developer (React Native, Flutter). Single-page HTML site with dark/light theme.

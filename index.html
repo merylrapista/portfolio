@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Basta_portfolio - Cross-Platform Mobile Developer specializing in React Native and Flutter app development.">
+  <meta name="description" content="winxport - Cross-Platform Mobile Developer specializing in React Native and Flutter app development.">
   <meta name="theme-color" content="#6C63FF">
-  <title>Basta_portfolio | Mobile App Developer</title>
+  <title>winxport | Mobile App Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
   <!-- ====== HEADER ====== -->
   <header class="header" role="banner">
     <nav class="nav" role="navigation" aria-label="Main navigation">
-      <a href="#hero" class="logo">Basta<span>_</span>portfolio</a>
+      <a href="#hero" class="logo">winxport</a>
 
       <ul class="nav-links" role="menubar">
         <li role="none"><a href="#about" role="menuitem">About</a></li>
@@ -52,46 +52,39 @@
 
   <!-- ====== HERO ====== -->
   <section id="hero" class="hero" aria-label="Hero introduction">
+    <div class="hero-background">
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-gradient-orb orb-3"></div>
+      <div class="hero-particle particle-1"></div>
+      <div class="hero-particle particle-2"></div>
+      <div class="hero-particle particle-3"></div>
+      <div class="hero-mesh-gradient"></div>
+    </div>
+
     <div class="hero-shapes" aria-hidden="true">
       <div class="hero-shape"></div>
       <div class="hero-shape"></div>
       <div class="hero-shape"></div>
     </div>
 
-    <div class="hero-grid">
+    <div class="hero-grid cinematic-hero">
       <div class="hero-content">
-        <span class="hero-greeting">Hello, I'm</span>
-        <h1 class="hero-name"><span class="gradient-text">Basta_portfolio</span></h1>
-        <p class="hero-title">Cross-Platform Mobile Developer</p>
-        <p class="hero-tagline">
+        <h1 class="hero-name">
+          <div class="kinetic-line">Creative.</div>
+          <div class="kinetic-line">Mobile.</div>
+          <div class="kinetic-line"><span class="gradient-text">Engineer.</span></div>
+        </h1>
+        <p class="hero-tagline kinetic-line">
           I craft high-performance, beautiful mobile apps using React Native and Flutter.
           From concept to deployment, I turn ideas into polished digital experiences.
         </p>
-        <div class="hero-cta">
+        <div class="hero-cta kinetic-line">
           <a href="#projects" class="btn btn-primary">
             View My Work
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="code-window" aria-hidden="true">
-          <div class="code-window-header">
-            <span class="code-dot"></span>
-            <span class="code-dot"></span>
-            <span class="code-dot"></span>
-          </div>
-          <div class="code-window-body">
-            <div class="code-line"><span class="comment">// Basta_portfolio</span></div>
-            <div class="code-line"><span class="keyword">import</span> { <span class="variable">App</span> } <span class="keyword">from</span> <span class="string">'./src/App'</span>;<span class="punctuation"></span></div>
-            <div class="code-line">&nbsp;</div>
-            <div class="code-line"><span class="keyword">const</span> <span class="function">build</span> = <span class="punctuation">(</span><span class="variable">idea</span><span class="punctuation">)</span> <span class="keyword">=></span> {</div>
-            <div class="code-line">&nbsp;&nbsp;<span class="keyword">const</span> <span class="function">app</span> = <span class="keyword">new</span> <span class="variable">App</span><span class="punctuation">(</span>idea<span class="punctuation">)</span>;</div>
-            <div class="code-line">&nbsp;&nbsp;<span class="keyword">return</span> <span class="function">deploy</span><span class="punctuation">(</span>app<span class="punctuation">)</span>;</div>
-            <div class="code-line">}<span class="punctuation">;</span><span class="code-cursor"></span></div>
-          </div>
         </div>
       </div>
     </div>
@@ -112,14 +105,14 @@
         </div>
 
         <div class="about-text reveal reveal-delay-4">
-          <p>
+          <p class="text-scrub">
             I'm a cross-platform mobile developer with a deep passion for building apps that people love to use.
             I specialize in React Native and Flutter, translating complex requirements into smooth,
             intuitive mobile experiences.
           </p>
-          <p>
-            With expertise spanning the full development lifecycle — from architecture and UI/UX
-            implementation to API integration and App Store deployment — I deliver production-ready
+          <p class="text-scrub">
+            With expertise spanning the full development lifecycle - from architecture and UI/UX
+            implementation to API integration and App Store deployment - I deliver production-ready
             applications that meet the highest standards of quality and performance.
           </p>
 
@@ -145,64 +138,82 @@
   <!-- ====== SKILLS ====== -->
   <section id="skills" class="skills section" aria-label="Skills and technologies">
     <div class="container">
-      <span class="section-label reveal">Skills</span>
-      <h2 class="section-title reveal reveal-delay-1">Technologies I Work With</h2>
-      <p class="section-subtitle reveal reveal-delay-2">
-        A curated set of tools and frameworks I use to build modern cross-platform applications.
-      </p>
+      <h2 class="section-title reveal reveal-delay-1 bento-heading">Technologies I Work With</h2>
 
-      <div class="skills-grid">
+      <div class="bento-grid">
         <div class="skill-category reveal reveal-delay-1">
           <h3 class="skill-category-title">
-            <span class="skill-category-icon">📱</span>
+            <span class="skill-category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </span>
             Mobile Frameworks
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag"><span class="skill-tag-icon">⚛️</span> React Native</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🦋</span> Flutter</span>
-            <span class="skill-tag"><span class="skill-tag-icon">⚡</span> Expo</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🎯</span> Dart</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> React Native</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 4 11.5 7.5 15 13.5 9l5 5 1.5-1.5L13.5 2z"/><path d="m7.5 15-3.5 3.5L11 22l5-5-3.5-3.5"/></svg> Flutter</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Expo</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Dart</span>
           </div>
         </div>
 
         <div class="skill-category reveal reveal-delay-2">
           <h3 class="skill-category-title">
-            <span class="skill-category-icon">💻</span>
+            <span class="skill-category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
             Languages
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag"><span class="skill-tag-icon">🟨</span> JavaScript</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🔵</span> TypeScript</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🟦</span> Dart</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🌐</span> HTML/CSS</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> JavaScript</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> TypeScript</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Dart</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> HTML/CSS</span>
           </div>
         </div>
 
         <div class="skill-category reveal reveal-delay-3">
           <h3 class="skill-category-title">
-            <span class="skill-category-icon">🛠️</span>
+            <span class="skill-category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </span>
             Tools & Platforms
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag"><span class="skill-tag-icon">🔥</span> Firebase</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🔗</span> Git/GitHub</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🔄</span> CI/CD</span>
-            <span class="skill-tag"><span class="skill-tag-icon">📦</span> App Store</span>
-            <span class="skill-tag"><span class="skill-tag-icon">▶️</span> Play Store</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"/><path d="M5 20a1 1 0 0 1-1-1v-6a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1z"/><path d="M19 20a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v11a1 1 0 0 1-1 1z"/></svg> Firebase</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg> Git/GitHub</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4"/><polyline points="1 10 4 14 8 10"/><path d="M23 14v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6"/><polyline points="1 18 4 22 8 18"/></svg> CI/CD</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> App Store</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Play Store</span>
           </div>
         </div>
 
-        <div class="skill-category reveal reveal-delay-4">
+        <div class="bento-item skill-category reveal reveal-delay-4">
           <h3 class="skill-category-title">
-            <span class="skill-category-icon">⚙️</span>
+            <span class="skill-category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </span>
             Backend & APIs
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag"><span class="skill-tag-icon">🟢</span> Node.js</span>
-            <span class="skill-tag"><span class="skill-tag-icon">◈</span> GraphQL</span>
-            <span class="skill-tag"><span class="skill-tag-icon">🔌</span> REST APIs</span>
-            <span class="skill-tag"><span class="skill-tag-icon">☁️</span> AWS</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Node.js</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> GraphQL</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> REST APIs</span>
+            <span class="skill-tag"><svg class="skill-tag-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> AWS</span>
           </div>
+        </div>
+      </div>
+      
+      <!-- Infinite Marquee -->
+      <div class="marquee-container reveal reveal-delay-2">
+        <div class="marquee-content">
+          <span>React Native</span> <span class="marquee-dot">•</span>
+          <span>Flutter</span> <span class="marquee-dot">•</span>
+          <span>TypeScript</span> <span class="marquee-dot">•</span>
+          <span>GraphQL</span> <span class="marquee-dot">•</span>
+          <span>Node.js</span> <span class="marquee-dot">•</span>
+          <span>AWS</span> <span class="marquee-dot">•</span>
+          <span>Swift</span> <span class="marquee-dot">•</span>
+          <span>Kotlin</span> <span class="marquee-dot">•</span>
         </div>
       </div>
     </div>
@@ -217,105 +228,254 @@
         A selection of cross-platform mobile applications I've built from the ground up.
       </p>
 
-      <div class="projects-grid">
+      <div class="projects-layout">
+        <div class="projects-grid sticky-stack">
 
-        <article class="project-card reveal reveal-delay-1">
-          <div class="project-card-image">
-            <span class="project-card-icon">🏋️</span>
-          </div>
-          <div class="project-card-body">
-            <span class="project-card-platform react-native">⚛️ React Native</span>
-            <h3 class="project-card-title">FitTrack</h3>
-            <p class="project-card-description">
-              A comprehensive fitness tracking app with workout planning, real-time progress charts,
-              and personalized training recommendations powered by machine learning.
-            </p>
-            <div class="project-card-tech">
-              <span>React Native</span>
-              <span>TypeScript</span>
-              <span>Firebase</span>
-              <span>Reanimated</span>
+          <article class="project-card reveal reveal-delay-1" data-project="fittrack">
+            <div class="project-card-image">
+              <img src="assets/images/fittrack.png" alt="FitTrack App" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div>
-            <div class="project-card-links">
-              <a href="#" aria-label="View FitTrack project details">View Project →</a>
-              <a href="#" aria-label="FitTrack source code">Source Code</a>
+            <div class="project-card-body">
+              <span class="project-card-platform react-native">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                React Native
+              </span>
+              <h3 class="project-card-title">FitTrack</h3>
+              <p class="project-card-description">
+                A comprehensive fitness tracking app with workout planning, real-time progress charts,
+                and personalized training recommendations powered by machine learning.
+              </p>
+              <div class="project-card-tech">
+                <span>React Native</span>
+                <span>TypeScript</span>
+                <span>Firebase</span>
+                <span>Reanimated</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="view-project-btn" data-project="fittrack" aria-label="View FitTrack project details">View Project</a>
+                <a href="#" aria-label="FitTrack source code">Source Code</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card reveal reveal-delay-2">
-          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(2,86,155,0.15),rgba(66,165,245,0.15));">
-            <span class="project-card-icon">🛍️</span>
-          </div>
-          <div class="project-card-body">
-            <span class="project-card-platform flutter">🦋 Flutter</span>
-            <h3 class="project-card-title">ShopFlow</h3>
-            <p class="project-card-description">
-              A high-performance e-commerce platform featuring real-time inventory management,
-              smooth product animations, and an intuitive checkout experience.
-            </p>
-            <div class="project-card-tech">
-              <span>Flutter</span>
-              <span>Dart</span>
-              <span>Stripe</span>
-              <span>Firebase</span>
+          <article class="project-card reveal reveal-delay-2" data-project="shopflow">
+            <div class="project-card-image">
+              <img src="assets/images/shopflow.png" alt="ShopFlow App" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div>
-            <div class="project-card-links">
-              <a href="#" aria-label="View ShopFlow project details">View Project →</a>
-              <a href="#" aria-label="ShopFlow source code">Source Code</a>
+            <div class="project-card-body">
+              <span class="project-card-platform flutter">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 4 11.5 7.5 15 13.5 9l5 5 1.5-1.5L13.5 2z"/><path d="m7.5 15-3.5 3.5L11 22l5-5-3.5-3.5"/></svg>
+                Flutter
+              </span>
+              <h3 class="project-card-title">ShopFlow</h3>
+              <p class="project-card-description">
+                A high-performance e-commerce platform featuring real-time inventory management,
+                smooth product animations, and an intuitive checkout experience.
+              </p>
+              <div class="project-card-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Stripe</span>
+                <span>Firebase</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="view-project-btn" data-project="shopflow" aria-label="View ShopFlow project details">View Project</a>
+                <a href="#" aria-label="ShopFlow source code">Source Code</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card reveal reveal-delay-3">
-          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(108,99,255,0.15),rgba(255,107,107,0.15));">
-            <span class="project-card-icon">💬</span>
-          </div>
-          <div class="project-card-body">
-            <span class="project-card-platform react-native">⚛️ React Native</span>
-            <h3 class="project-card-title">Socially</h3>
-            <p class="project-card-description">
-              A modern social media platform with real-time messaging, stories, feed algorithm,
-              and push notifications — built for scale and performance.
-            </p>
-            <div class="project-card-tech">
-              <span>React Native</span>
-              <span>GraphQL</span>
-              <span>Socket.io</span>
-              <span>AWS</span>
+          <article class="project-card reveal reveal-delay-3" data-project="socially">
+            <div class="project-card-image">
+              <img src="assets/images/socially.png" alt="Socially App" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div>
-            <div class="project-card-links">
-              <a href="#" aria-label="View Socially project details">View Project →</a>
-              <a href="#" aria-label="Socially source code">Source Code</a>
+            <div class="project-card-body">
+              <span class="project-card-platform react-native">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                React Native
+              </span>
+              <h3 class="project-card-title">Socially</h3>
+              <p class="project-card-description">
+                A modern social media platform with real-time messaging, stories, feed algorithm,
+                and push notifications built for scale and performance.
+              </p>
+              <div class="project-card-tech">
+                <span>React Native</span>
+                <span>GraphQL</span>
+                <span>Socket.io</span>
+                <span>AWS</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="view-project-btn" data-project="socially" aria-label="View Socially project details">View Project</a>
+                <a href="#" aria-label="Socially source code">Source Code</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card reveal reveal-delay-4">
-          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(0,201,167,0.15),rgba(2,86,155,0.15));">
-            <span class="project-card-icon">🌤️</span>
-          </div>
-          <div class="project-card-body">
-            <span class="project-card-platform flutter">🦋 Flutter</span>
-            <h3 class="project-card-title">WeatherNow</h3>
-            <p class="project-card-description">
-              A beautifully animated weather app with hyperlocal forecasts, severe weather alerts,
-              and an intuitive gesture-driven interface with dynamic backgrounds.
-            </p>
-            <div class="project-card-tech">
-              <span>Flutter</span>
-              <span>Dart</span>
-              <span>OpenWeather API</span>
-              <span>Animations</span>
+          <article class="project-card reveal reveal-delay-4" data-project="weathernow">
+            <div class="project-card-image" style="background:linear-gradient(135deg,rgba(0,201,167,0.15),rgba(2,86,155,0.15));">
+              <svg class="project-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20"/><circle cx="12" cy="12" r="4"/>
+                <path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/>
+              </svg>
             </div>
-            <div class="project-card-links">
-              <a href="#" aria-label="View WeatherNow project details">View Project →</a>
-              <a href="#" aria-label="WeatherNow source code">Source Code</a>
+            <div class="project-card-body">
+              <span class="project-card-platform flutter">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 4 11.5 7.5 15 13.5 9l5 5 1.5-1.5L13.5 2z"/><path d="m7.5 15-3.5 3.5L11 22l5-5-3.5-3.5"/></svg>
+                Flutter
+              </span>
+              <h3 class="project-card-title">WeatherNow</h3>
+              <p class="project-card-description">
+                A beautifully animated weather app with hyperlocal forecasts, severe weather alerts,
+                and an intuitive gesture-driven interface with dynamic backgrounds.
+              </p>
+              <div class="project-card-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>OpenWeather API</span>
+                <span>Animations</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="view-project-btn" data-project="weathernow" aria-label="View WeatherNow project details">View Project</a>
+                <a href="#" aria-label="WeatherNow source code">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sticky Mobile Mockup Simulator -->
+        <div class="simulator-sticky-container reveal reveal-delay-2">
+          <div class="simulator-frame">
+            <div class="phone-mockup">
+              <div class="phone-notch">
+                <div class="phone-camera"></div>
+                <div class="phone-speaker"></div>
+              </div>
+              
+              <div class="phone-screen">
+                <!-- Welcome/Boot Screen -->
+                <div class="sim-screen welcome-screen active" id="screen-welcome">
+                  <div class="sim-os-logo">winxport OS</div>
+                  <div class="sim-welcome-card">
+                    <p class="sim-welcome-text">Select a project to boot simulated application</p>
+                    <div class="sim-action-hint">Hover / tap cards or click buttons on the left</div>
+                  </div>
+                  <div class="sim-system-status">System Status: Online</div>
+                </div>
+
+                <!-- FitTrack App Screen -->
+                <div class="sim-screen app-screen" id="screen-fittrack">
+                  <div class="app-navbar">
+                    <span class="app-back">←</span>
+                    <span class="app-title">FitTrack</span>
+                    <span class="app-action">Profile</span>
+                  </div>
+                  <div class="app-content fittrack-app-content">
+                    <div class="activity-rings">
+                      <div class="ring-status">
+                        <span class="ring-percent" id="fittrack-percentage">0%</span>
+                        <span class="ring-label">Daily Goal</span>
+                      </div>
+                    </div>
+                    <div class="stats-grid">
+                      <div class="stat-card">
+                        <span class="stat-card-value">2,480</span>
+                        <span class="stat-card-label">Steps</span>
+                      </div>
+                      <div class="stat-card">
+                        <span class="stat-card-value" id="fittrack-calories">120</span>
+                        <span class="stat-card-label">Calories</span>
+                      </div>
+                    </div>
+                    <button class="sim-action-btn" id="fittrack-start-btn" type="button">Start Session</button>
+                    <div class="fittrack-tips">
+                      <div class="tip-item">⚡ Tip: Drink 2.5L water today.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ShopFlow App Screen -->
+                <div class="sim-screen app-screen" id="screen-shopflow">
+                  <div class="app-navbar">
+                    <span class="app-back">←</span>
+                    <span class="app-title">ShopFlow</span>
+                    <span class="app-cart">🛒 <span id="shopflow-cart-count">0</span></span>
+                  </div>
+                  <div class="app-content shopflow-app-content">
+                    <div class="product-showcase">
+                      <div class="prod-item">
+                        <div class="prod-icon">📱</div>
+                        <div class="prod-details">
+                          <span class="prod-name">Mobile Case</span>
+                          <span class="prod-price">$19.99</span>
+                        </div>
+                        <button class="prod-add-btn" data-prod="case" type="button">+</button>
+                      </div>
+                      <div class="prod-item">
+                        <div class="prod-icon">🎧</div>
+                        <div class="prod-details">
+                          <span class="prod-name">Headphones</span>
+                          <span class="prod-price">$149.99</span>
+                        </div>
+                        <button class="prod-add-btn" data-prod="headphones" type="button">+</button>
+                      </div>
+                    </div>
+                    <button class="sim-action-btn primary-btn" id="shopflow-checkout-btn" type="button">Checkout</button>
+                  </div>
+                </div>
+
+                <!-- Socially App Screen -->
+                <div class="sim-screen app-screen" id="screen-socially">
+                  <div class="app-navbar">
+                    <span class="app-back">←</span>
+                    <span class="app-title">Socially</span>
+                    <span class="app-dot-menu">•••</span>
+                  </div>
+                  <div class="app-content socially-app-content">
+                    <div class="chat-feed" id="socially-chat-feed">
+                      <div class="message incoming">Hey! Choose a preset question below.</div>
+                    </div>
+                    <div class="preset-triggers">
+                      <button class="preset-tag" data-answer="I love TypeScript, React Native, and Flutter. I focus on highly performant UI components." type="button">Stack?</button>
+                      <button class="preset-tag" data-answer="Yes! I build and optimize custom modules in native iOS/Android when needed." type="button">Native Dev?</button>
+                      <button class="preset-tag" data-answer="Let's build together! Send me a message using the contact form below." type="button">Freelance?</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- WeatherNow App Screen -->
+                <div class="sim-screen app-screen" id="screen-weathernow">
+                  <div class="app-navbar">
+                    <span class="app-back">←</span>
+                    <span class="app-title">WeatherNow</span>
+                    <span class="app-search">🔍</span>
+                  </div>
+                  <div class="app-content weathernow-app-content">
+                    <div class="weather-hero">
+                      <div class="weather-icon-large" id="weathernow-icon">☀️</div>
+                      <span class="weather-temp-large" id="weathernow-temp">74°F</span>
+                      <span class="weather-city-name" id="weathernow-city">San Francisco</span>
+                    </div>
+                    <div class="weather-tabs">
+                      <button class="weather-tab-btn active" data-weather='{"city":"San Francisco","temp":"74°F","icon":"☀️"}' type="button">SF</button>
+                      <button class="weather-tab-btn" data-weather='{"city":"New York","temp":"65°F","icon":"☁️"}' type="button">NY</button>
+                      <button class="weather-tab-btn" data-weather='{"city":"Tokyo","temp":"82°F","icon":"🌧️"}' type="button">TK</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="phone-home"></div>
             </div>
           </div>
-        </article>
+        </div>
 
       </div>
+    </div>
+  </section>
     </div>
   </section>
 
@@ -332,7 +492,7 @@
         <div class="timeline-inner" id="timeline-line"></div>
         <div class="timeline-item reveal reveal-delay-1">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2024 — Present</span>
+          <span class="timeline-date">2024 - Present</span>
           <h3 class="timeline-title">Senior Mobile Developer</h3>
           <p class="timeline-company">TechVentures Inc.</p>
           <div class="timeline-description">
@@ -346,7 +506,7 @@
 
         <div class="timeline-item reveal reveal-delay-2">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2022 — 2024</span>
+          <span class="timeline-date">2022 - 2024</span>
           <h3 class="timeline-title">Mobile App Developer</h3>
           <p class="timeline-company">AppCraft Studios</p>
           <div class="timeline-description">
@@ -360,7 +520,7 @@
 
         <div class="timeline-item reveal reveal-delay-3">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2021 — 2022</span>
+          <span class="timeline-date">2021 - 2022</span>
           <h3 class="timeline-title">Junior React Native Developer</h3>
           <p class="timeline-company">StartupHub</p>
           <div class="timeline-description">
@@ -419,7 +579,9 @@
 
         <div class="contact-info reveal reveal-delay-4">
           <div class="contact-info-item">
-            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
               <div class="contact-info-label">Email</div>
               <div class="contact-info-value">hello@basta-portfolio.dev</div>
@@ -427,7 +589,9 @@
           </div>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <div>
               <div class="contact-info-label">Location</div>
               <div class="contact-info-value">Remote / Worldwide</div>
@@ -435,10 +599,12 @@
           </div>
 
           <div class="contact-info-item">
-            <div class="contact-info-icon">⏰</div>
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
             <div>
               <div class="contact-info-label">Availability</div>
-              <div class="contact-info-value">Open to freelance & full-time opportunities</div>
+              <div class="contact-info-value">Open to freelance and full-time opportunities</div>
             </div>
           </div>
 
@@ -462,7 +628,7 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-copyright">&copy; 2026 Basta_portfolio. All rights reserved.</p>
+        <p class="footer-copyright">&copy; 2026 winxport. All rights reserved.</p>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="#hero">Home</a>
           <a href="#projects">Projects</a>
@@ -482,7 +648,20 @@
   <!-- ====== TOAST ====== -->
   <div class="toast" id="toast" role="alert" aria-live="polite"></div>
 
+  <!-- ====== PROJECT DRAWER ====== -->
+  <div class="drawer-overlay" id="project-drawer-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="project-drawer" id="project-drawer">
+      <button class="drawer-close" aria-label="Close details" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="drawer-content" id="drawer-content-body">
+        <!-- Content will be injected dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
   <!-- ====== SCRIPTS ====== -->
-  <script src="js/main.js" defer></script>
+  <div class="cursor-glow"></div>
+  <script src="js/main.js"></script>
 </body>
 </html>
