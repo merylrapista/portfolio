@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Basta_portfolio - Cross-Platform Mobile Developer specializing in React Native and Flutter app development.">
+  <meta name="theme-color" content="#6C63FF">
+  <title>Basta_portfolio | Mobile App Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== Skip Link (Accessibility) ====== -->
+  <a href="#hero" class="skip-link" style="position:absolute;top:-100%;left:0;padding:8px 16px;background:var(--color-primary);color:#fff;z-index:9999;font-weight:600;">Skip to content</a>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="logo">Basta<span>_</span>portfolio</a>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;align-items:center;">
+        <button class="theme-toggle" aria-label="Toggle dark mode" type="button">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" aria-label="Toggle navigation menu" type="button" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero" class="hero" aria-label="Hero introduction">
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-name"><span class="gradient-text">Basta_portfolio</span></h1>
+        <p class="hero-title">Cross-Platform Mobile Developer</p>
+        <p class="hero-tagline">
+          I craft high-performance, beautiful mobile apps using React Native and Flutter.
+          From concept to deployment, I turn ideas into polished digital experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-window" aria-hidden="true">
+          <div class="code-window-header">
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+          </div>
+          <div class="code-window-body">
+            <div class="code-line"><span class="comment">// Basta_portfolio</span></div>
+            <div class="code-line"><span class="keyword">import</span> { <span class="variable">App</span> } <span class="keyword">from</span> <span class="string">'./src/App'</span>;<span class="punctuation"></span></div>
+            <div class="code-line">&nbsp;</div>
+            <div class="code-line"><span class="keyword">const</span> <span class="function">build</span> = <span class="punctuation">(</span><span class="variable">idea</span><span class="punctuation">)</span> <span class="keyword">=></span> {</div>
+            <div class="code-line">&nbsp;&nbsp;<span class="keyword">const</span> <span class="function">app</span> = <span class="keyword">new</span> <span class="variable">App</span><span class="punctuation">(</span>idea<span class="punctuation">)</span>;</div>
+            <div class="code-line">&nbsp;&nbsp;<span class="keyword">return</span> <span class="function">deploy</span><span class="punctuation">(</span>app<span class="punctuation">)</span>;</div>
+            <div class="code-line">}<span class="punctuation">;</span><span class="code-cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="about section" aria-label="About me">
+    <div class="container">
+      <span class="section-label reveal">About Me</span>
+      <h2 class="section-title reveal reveal-delay-1">Who I Am</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        A passionate mobile developer focused on building cross-platform applications that deliver native-quality experiences.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-avatar reveal reveal-delay-3">
+          <div class="about-avatar-inner">BP</div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-4">
+          <p>
+            I'm a cross-platform mobile developer with a deep passion for building apps that people love to use.
+            I specialize in React Native and Flutter, translating complex requirements into smooth,
+            intuitive mobile experiences.
+          </p>
+          <p>
+            With expertise spanning the full development lifecycle — from architecture and UI/UX
+            implementation to API integration and App Store deployment — I deliver production-ready
+            applications that meet the highest standards of quality and performance.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="25">0</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="15">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills" class="skills section" aria-label="Skills and technologies">
+    <div class="container">
+      <span class="section-label reveal">Skills</span>
+      <h2 class="section-title reveal reveal-delay-1">Technologies I Work With</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        A curated set of tools and frameworks I use to build modern cross-platform applications.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal reveal-delay-1">
+          <h3 class="skill-category-title">
+            <span class="skill-category-icon">📱</span>
+            Mobile Frameworks
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-tag-icon">⚛️</span> React Native</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🦋</span> Flutter</span>
+            <span class="skill-tag"><span class="skill-tag-icon">⚡</span> Expo</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🎯</span> Dart</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <h3 class="skill-category-title">
+            <span class="skill-category-icon">💻</span>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-tag-icon">🟨</span> JavaScript</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🔵</span> TypeScript</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🟦</span> Dart</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🌐</span> HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-3">
+          <h3 class="skill-category-title">
+            <span class="skill-category-icon">🛠️</span>
+            Tools & Platforms
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-tag-icon">🔥</span> Firebase</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🔗</span> Git/GitHub</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🔄</span> CI/CD</span>
+            <span class="skill-tag"><span class="skill-tag-icon">📦</span> App Store</span>
+            <span class="skill-tag"><span class="skill-tag-icon">▶️</span> Play Store</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-4">
+          <h3 class="skill-category-title">
+            <span class="skill-category-icon">⚙️</span>
+            Backend & APIs
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-tag-icon">🟢</span> Node.js</span>
+            <span class="skill-tag"><span class="skill-tag-icon">◈</span> GraphQL</span>
+            <span class="skill-tag"><span class="skill-tag-icon">🔌</span> REST APIs</span>
+            <span class="skill-tag"><span class="skill-tag-icon">☁️</span> AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="projects section" aria-label="Featured projects">
+    <div class="container">
+      <span class="section-label reveal">Portfolio</span>
+      <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        A selection of cross-platform mobile applications I've built from the ground up.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-card-image">
+            <span class="project-card-icon">🏋️</span>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-platform react-native">⚛️ React Native</span>
+            <h3 class="project-card-title">FitTrack</h3>
+            <p class="project-card-description">
+              A comprehensive fitness tracking app with workout planning, real-time progress charts,
+              and personalized training recommendations powered by machine learning.
+            </p>
+            <div class="project-card-tech">
+              <span>React Native</span>
+              <span>TypeScript</span>
+              <span>Firebase</span>
+              <span>Reanimated</span>
+            </div>
+            <div class="project-card-links">
+              <a href="#" aria-label="View FitTrack project details">View Project →</a>
+              <a href="#" aria-label="FitTrack source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(2,86,155,0.15),rgba(66,165,245,0.15));">
+            <span class="project-card-icon">🛍️</span>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-platform flutter">🦋 Flutter</span>
+            <h3 class="project-card-title">ShopFlow</h3>
+            <p class="project-card-description">
+              A high-performance e-commerce platform featuring real-time inventory management,
+              smooth product animations, and an intuitive checkout experience.
+            </p>
+            <div class="project-card-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Stripe</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-card-links">
+              <a href="#" aria-label="View ShopFlow project details">View Project →</a>
+              <a href="#" aria-label="ShopFlow source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-3">
+          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(108,99,255,0.15),rgba(255,107,107,0.15));">
+            <span class="project-card-icon">💬</span>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-platform react-native">⚛️ React Native</span>
+            <h3 class="project-card-title">Socially</h3>
+            <p class="project-card-description">
+              A modern social media platform with real-time messaging, stories, feed algorithm,
+              and push notifications — built for scale and performance.
+            </p>
+            <div class="project-card-tech">
+              <span>React Native</span>
+              <span>GraphQL</span>
+              <span>Socket.io</span>
+              <span>AWS</span>
+            </div>
+            <div class="project-card-links">
+              <a href="#" aria-label="View Socially project details">View Project →</a>
+              <a href="#" aria-label="Socially source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-4">
+          <div class="project-card-image" style="background:linear-gradient(135deg,rgba(0,201,167,0.15),rgba(2,86,155,0.15));">
+            <span class="project-card-icon">🌤️</span>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-platform flutter">🦋 Flutter</span>
+            <h3 class="project-card-title">WeatherNow</h3>
+            <p class="project-card-description">
+              A beautifully animated weather app with hyperlocal forecasts, severe weather alerts,
+              and an intuitive gesture-driven interface with dynamic backgrounds.
+            </p>
+            <div class="project-card-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>OpenWeather API</span>
+              <span>Animations</span>
+            </div>
+            <div class="project-card-links">
+              <a href="#" aria-label="View WeatherNow project details">View Project →</a>
+              <a href="#" aria-label="WeatherNow source code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience" class="experience section" aria-label="Work experience">
+    <div class="container">
+      <span class="section-label reveal">Experience</span>
+      <h2 class="section-title reveal reveal-delay-1">Where I've Worked</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        My professional journey in mobile app development.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-inner" id="timeline-line"></div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2024 — Present</span>
+          <h3 class="timeline-title">Senior Mobile Developer</h3>
+          <p class="timeline-company">TechVentures Inc.</p>
+          <div class="timeline-description">
+            <ul>
+              <li>Architected and led development of 3 major React Native applications serving 100K+ users</li>
+              <li>Established CI/CD pipelines reducing deployment time by 60%</li>
+              <li>Mentored a team of 4 junior developers on best practices and code quality</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2022 — 2024</span>
+          <h3 class="timeline-title">Mobile App Developer</h3>
+          <p class="timeline-company">AppCraft Studios</p>
+          <div class="timeline-description">
+            <ul>
+              <li>Built and shipped 5 cross-platform apps using React Native and Flutter</li>
+              <li>Implemented complex animations and gesture-driven interfaces for premium UX</li>
+              <li>Integrated third-party APIs including payment gateways, maps, and social platforms</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2021 — 2022</span>
+          <h3 class="timeline-title">Junior React Native Developer</h3>
+          <p class="timeline-company">StartupHub</p>
+          <div class="timeline-description">
+            <ul>
+              <li>Developed and maintained UI components for two flagship mobile applications</li>
+              <li>Collaborated with design team to implement pixel-perfect interfaces from Figma</li>
+              <li>Contributed to code reviews and established testing practices with Jest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="contact section" aria-label="Contact me">
+    <div class="container">
+      <span class="section-label reveal">Contact</span>
+      <h2 class="section-title reveal reveal-delay-1">Get In Touch</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        Have a project in mind or just want to say hello? Drop me a message and I'll get back to you.
+      </p>
+
+      <div class="contact-content">
+        <form class="contact-form reveal reveal-delay-3" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
+            <span class="form-error" id="name-error">Please enter your name</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
+            <span class="form-error" id="email-error">Please enter a valid email address</span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+            <span class="form-error" id="subject-error">Please enter a subject</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="message-error">Please enter your message</span>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            <span class="btn-text">Send Message</span>
+            <svg class="btn-text" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span class="btn-spinner"></span>
+          </button>
+        </form>
+
+        <div class="contact-info reveal reveal-delay-4">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">hello@basta-portfolio.dev</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Remote / Worldwide</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">⏰</div>
+            <div>
+              <div class="contact-info-label">Availability</div>
+              <div class="contact-info-value">Open to freelance & full-time opportunities</div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" aria-label="GitHub profile" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn profile" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X profile" title="Twitter / X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copyright">&copy; 2026 Basta_portfolio. All rights reserved.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#hero">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== BACK TO TOP ====== -->
+  <button class="back-to-top" aria-label="Scroll to top" type="button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ====== TOAST ====== -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
